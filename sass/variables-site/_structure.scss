@@ -1,2 +1,5 @@
-$size__site-main: 100%;
-$size__site-sidebar: 25%;
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1010px;
+    }
+}
