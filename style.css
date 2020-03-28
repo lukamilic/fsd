@@ -563,6 +563,9 @@ h5 {
   letter-spacing: 0.35px;
   font-weight: bold;
 }
+.owl-carousel.head-slider .owl-stage-outer .bimg .container .item .info a:hover {
+  text-decoration: none;
+}
 @media (max-width: 767px) {
   .owl-carousel.head-slider .owl-nav {
     display: none;
@@ -682,6 +685,9 @@ h5 {
 }
 .flex .url {
   margin-right: 30px;
+}
+.flex .url a:hover {
+  text-decoration: none;
 }
 @media (max-width: 767px) {
   .flex .url {

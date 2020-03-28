@@ -195,6 +195,9 @@
                         line-height: 30px;
                         letter-spacing: 0.35px;
                         font-weight: bold;
+                        &:hover {
+                            text-decoration: none;
+                        }
                     }
                 } 
             }
@@ -322,6 +325,11 @@
     
     .url {
         margin-right: 30px;
+        a {
+            &:hover {
+                text-decoration: none;
+            }
+        }
         @include md {
             width: 100%;
             text-align: center;
