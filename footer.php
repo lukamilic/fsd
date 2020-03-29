@@ -24,7 +24,7 @@
 						?>
 						 <img src="<?php echo $logo[0] ?>" alt="<?php echo esc_attr(get_bloginfo('name')); ?>">
 					</div>
-					<div class="copyright pt-5">
+					<div class="copyright pt-5 mb-3">
 						<p class="mb-0">&copy; Copyright 2009-20014,</p>
 						<p class="mb-0">All Rights Reserved</p>
 						<p class="mb-0">Created and Hosted by AAA</p>
