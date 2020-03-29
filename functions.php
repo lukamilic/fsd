@@ -228,7 +228,7 @@ function content() {
 	$output = "";
 	$output .= '<div class="container-fluid about">';
 	$output .= '<div class="container">';
-	$output .= '<h2 class="text-center mb-5">Lorem ipsum dolor sit amet consectetur</h2>';
+	$output .= '<h2 class="text-center line mb-5">Lorem ipsum dolor sit amet consectetur</h2>';
 	$output .= '<div class="row">';
 	
 	while( $query->have_posts() ) : $query->the_post(); global $post;
@@ -279,13 +279,11 @@ function testimonial() {
 	$subtitle = get_field('subtitle', $id);
 	$output .= '<div class="container">';
 	$output .= '<div class="row">';
-	// $output .= '<div class="col-sm-12">';
     $output .= '<div class="item">';
 	$output .= '<div class="header-text">';
-	$output .= '<h2 class="main-heading">' . $title . '</h2>';
+	$output .= '<h2 class="main-heading line">' . $title . '</h2>';
 	$output .= '<h5 class="main-subheading pl-3 pl-sm-3 pr-3 pr-sm-3 pl-md-0">' . $subtitle . '</h5>';
 	$output .= '</div>';
-	// $output .= '</div>';
 	$output .= '</div>';
 	$output .= '</div>';
 	$output .= '</div>';

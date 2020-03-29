@@ -346,10 +346,38 @@
     background-position: center;
     border-bottom: 1px solid #dfdfdf;
     padding-bottom: 2rem;
+    .line {
+        position: relative;
+        z-index: 0;
+        &::before {
+            border-top: 1px solid $color_graydot;
+            content:"";
+            position: absolute; 
+            top: 50%; left: 0; right: 0; bottom: 0;
+            width: 15rem;
+            z-index: -1;
+            @include md {
+                border: none;
+            }
+        }
+        &::after {
+            border-top: 1px solid $color_graydot;
+            content:"";
+            position: absolute; 
+            top: 50%; right: 0; bottom: 0;
+            width: 15rem;
+            z-index: -1;
+            @include md {
+                border: none;
+            }
+        }
+    }
     h2 {
         font-family: MyriadPro-Semibold;
         line-height: 30px;
         letter-spacing: -1.8px;
+       
+        
     }
     .subheading {
         font-family: MyriadPro-Regular;
@@ -372,6 +400,32 @@
     .header-text {
         text-align: center;
         margin-top: 5rem;
+        .line {
+            position: relative;
+            z-index: 0;
+            &::before {
+                border-top: 1px solid $color_graydot;
+                content:"";
+                position: absolute; 
+                left: 0; right: 0; bottom: 0;
+                width: 15rem;
+                z-index: -1;
+                @include md {
+                    border: none;
+                }
+            }
+            &::after {
+                border-top: 1px solid $color_graydot;
+                content:"";
+                position: absolute; 
+                right: 0; bottom: 0;
+                width: 15rem;
+                z-index: -1;
+                @include md {
+                    border: none;
+                }
+            }
+        }
         h2 {
             font-family: 'Lato';
             font-weight: 700;
